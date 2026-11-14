@@ -1,0 +1,70 @@
+{
+  "mode": "compare",
+  "time": "2026-11-13T00:34:43+08:00",
+  "results": [
+    {
+      "url": "http://192.168.0.240:8000/",
+      "file": "results/本次實測_20261113_0033/levels/qr_L.png",
+      "version": 2,
+      "modules": 25,
+      "level": "L",
+      "pixels": [
+        330,
+        330
+      ],
+      "bytes": 1498,
+      "label": "",
+      "logo": null,
+      "decoded": "http://192.168.0.240:8000/",
+      "matches": true
+    },
+    {
+      "url": "http://192.168.0.240:8000/",
+      "file": "results/本次實測_20261113_0033/levels/qr_M.png",
+      "version": 2,
+      "modules": 25,
+      "level": "M",
+      "pixels": [
+        330,
+        330
+      ],
+      "bytes": 1482,
+      "label": "",
+      "logo": null,
+      "decoded": "http://192.168.0.240:8000/",
+      "matches": true
+    },
+    {
+      "url": "http://192.168.0.240:8000/",
+      "file": "results/本次實測_20261113_0033/levels/qr_Q.png",
+      "version": 3,
+      "modules": 29,
+      "level": "Q",
+      "pixels": [
+        370,
+        370
+      ],
+      "bytes": 1844,
+      "label": "",
+      "logo": null,
+      "decoded": "http://192.168.0.240:8000/",
+      "matches": true
+    },
+    {
+      "url": "http://192.168.0.240:8000/",
+      "file": "results/本次實測_20261113_0033/levels/qr_H.png",
+      "version": 3,
+      "modules": 29,
+      "level": "H",
+      "pixels": [
+        370,
+        370
+      ],
+      "bytes": 1870,
+      "label": "",
+      "logo": null,
+      "decoded": "http://192.168.0.240:8000/",
+      "matches": true
+    }
+  ]
+}

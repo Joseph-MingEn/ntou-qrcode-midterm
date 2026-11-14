@@ -1,0 +1,5 @@
+網站：http://192.168.0.240:8000/
+後台（僅限本機）：http://127.0.0.1:8000/admin
+QR 圖片：results/本次實測_20261113_0033/qr_serve.png
+連線紀錄：/Users/tumingen/Documents/ChatGPT/ＮＴＯＵ資料結構/期中作業專案/作業二_QRCode/results/connections_20261113_003453_6bd304.jsonl
+按 Ctrl+C 結束。

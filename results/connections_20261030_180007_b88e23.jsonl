@@ -1,0 +1,2 @@
+{"time": "2026-10-30T18:00:22+08:00", "ip": "127.0.0.1", "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36", "method": "GET", "path": "/", "status": 200}
+{"time": "2026-10-30T18:00:22+08:00", "ip": "127.0.0.1", "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36", "method": "GET", "path": "/favicon.ico", "status": 404}

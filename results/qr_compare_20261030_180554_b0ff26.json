@@ -1,0 +1,66 @@
+{
+  "mode": "compare",
+  "time": "2026-10-30T18:05:54+08:00",
+  "results": [
+    {
+      "url": "https://www.example.com/?test=visual",
+      "file": "images/重測/compare/qr_L.png",
+      "version": 3,
+      "modules": 29,
+      "level": "L",
+      "pixels": [
+        370,
+        370
+      ],
+      "bytes": 1844,
+      "label": "",
+      "decoded": "https://www.example.com/?test=visual",
+      "matches": true
+    },
+    {
+      "url": "https://www.example.com/?test=visual",
+      "file": "images/重測/compare/qr_M.png",
+      "version": 3,
+      "modules": 29,
+      "level": "M",
+      "pixels": [
+        370,
+        370
+      ],
+      "bytes": 1851,
+      "label": "",
+      "decoded": "https://www.example.com/?test=visual",
+      "matches": true
+    },
+    {
+      "url": "https://www.example.com/?test=visual",
+      "file": "images/重測/compare/qr_Q.png",
+      "version": 4,
+      "modules": 33,
+      "level": "Q",
+      "pixels": [
+        410,
+        410
+      ],
+      "bytes": 2180,
+      "label": "",
+      "decoded": "https://www.example.com/?test=visual",
+      "matches": true
+    },
+    {
+      "url": "https://www.example.com/?test=visual",
+      "file": "images/重測/compare/qr_H.png",
+      "version": 5,
+      "modules": 37,
+      "level": "H",
+      "pixels": [
+        450,
+        450
+      ],
+      "bytes": 2470,
+      "label": "",
+      "decoded": "https://www.example.com/?test=visual",
+      "matches": true
+    }
+  ]
+}

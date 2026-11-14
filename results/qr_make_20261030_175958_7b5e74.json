@@ -1,0 +1,17 @@
+{
+  "mode": "make",
+  "time": "2026-10-30T17:59:58+08:00",
+  "url": "https://www.example.com/",
+  "file": "images/qr_example.png",
+  "version": 3,
+  "modules": 29,
+  "level": "H",
+  "pixels": [
+    370,
+    422
+  ],
+  "bytes": 3807,
+  "label": "Example",
+  "decoded": "https://www.example.com/",
+  "matches": true
+}

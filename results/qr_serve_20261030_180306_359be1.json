@@ -1,0 +1,8 @@
+{
+  "mode": "serve",
+  "time": "2026-10-30T18:03:06+08:00",
+  "event": "stopped",
+  "url": "http://192.168.0.102:8000/",
+  "connection_log": "/Users/tumingen/Documents/ChatGPT/ＮＴＯＵ資料結構/期中作業專案/作業二_QRCode/results/connections_20261030_180007_b88e23.jsonl",
+  "requests": 2
+}

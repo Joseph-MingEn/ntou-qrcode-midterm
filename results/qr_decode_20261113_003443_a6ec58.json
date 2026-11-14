@@ -1,0 +1,8 @@
+{
+  "mode": "decode",
+  "time": "2026-11-13T00:34:43+08:00",
+  "file": "results/本次實測_20261113_0033/qr_logo.png",
+  "decoded": "http://192.168.0.240:8000/",
+  "expected": "http://192.168.0.240:8000/",
+  "matches": true
+}

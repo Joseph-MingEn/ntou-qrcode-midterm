@@ -1,0 +1,29 @@
+test_dashboard_and_api_access (test_qr_web.DashboardTests.test_dashboard_and_api_access) ... 127.0.0.1 - - [12/Nov/2026 23:39:25] code 403, message Local access only
+127.0.0.1 - - [12/Nov/2026 23:39:25] code 403, message Local access only
+127.0.0.1 - - [12/Nov/2026 23:39:25] code 404, message File not found
+ok
+test_history_caps_output_but_counts_every_request (test_qr_web.DashboardTests.test_history_caps_output_but_counts_every_request) ... ok
+test_history_excludes_admin_traffic_and_reports_corruption (test_qr_web.DashboardTests.test_history_excludes_admin_traffic_and_reports_corruption) ... ok
+test_local_admin_host_validation (test_qr_web.DashboardTests.test_local_admin_host_validation) ... ok
+test_builtin_logo_keeps_image_decodable_and_changes_center (test_qr_web.LogoTests.test_builtin_logo_keeps_image_decodable_and_changes_center) ... ok
+test_cli_logo_automatically_selects_h (test_qr_web.LogoTests.test_cli_logo_automatically_selects_h) ... ok
+test_custom_logo_and_missing_file (test_qr_web.LogoTests.test_custom_logo_and_missing_file) ... ok
+test_logo_rejects_low_error_correction (test_qr_web.LogoTests.test_logo_rejects_low_error_correction) ... ok
+test_all_levels_are_generated_and_decoded (test_qr_web.QRTests.test_all_levels_are_generated_and_decoded) ... ok
+test_make_decode_and_comparison (test_qr_web.QRTests.test_make_decode_and_comparison) ... ok
+test_missing_image_is_error (test_qr_web.QRTests.test_missing_image_is_error) ... [ WARN:0@0.654] global loadsave.cpp:278 findDecoder imread_('/not/a/real/qr.png'): can't open/read file: check file path/integrity
+ok
+test_url_validation (test_qr_web.QRTests.test_url_validation) ... ok
+test_request_log_includes_all_requests_and_agent (test_qr_web.ServerTests.test_request_log_includes_all_requests_and_agent) ... 127.0.0.1 - - [12/Nov/2026 23:39:26] code 404, message File not found
+ok
+test_api_range_and_invalid_values (test_qr_web.TimeRangeTests.test_api_range_and_invalid_values) ... 127.0.0.1 - - [12/Nov/2026 23:39:26] code 400, message Invalid time range
+127.0.0.1 - - [12/Nov/2026 23:39:26] code 400, message Invalid time range
+127.0.0.1 - - [12/Nov/2026 23:39:26] code 400, message Invalid time range
+ok
+test_filter_before_limit_includes_older_records (test_qr_web.TimeRangeTests.test_filter_before_limit_includes_older_records) ... ok
+test_range_is_inclusive_start_exclusive_end_and_timezone_aware (test_qr_web.TimeRangeTests.test_range_is_inclusive_start_exclusive_end_and_timezone_aware) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 1.665s
+
+OK

@@ -1,0 +1,21 @@
+{
+  "mode": "serve",
+  "time": "2026-11-12T21:56:14+08:00",
+  "event": "started",
+  "qr": {
+    "url": "http://192.168.0.240:8000/",
+    "file": "images/qr_20261112_phone.png",
+    "version": 3,
+    "modules": 29,
+    "level": "H",
+    "pixels": [
+      370,
+      417
+    ],
+    "bytes": 4695,
+    "label": "Local website",
+    "decoded": "http://192.168.0.240:8000/",
+    "matches": true
+  },
+  "connection_log": "/Users/tumingen/Documents/ChatGPT/ＮＴＯＵ資料結構/期中作業專案/作業二_QRCode/results/connections_20261112_215613_48944c.jsonl"
+}

@@ -1,0 +1,8 @@
+{
+  "mode": "decode",
+  "time": "2026-10-30T18:06:40+08:00",
+  "file": "images/重測/label.png",
+  "decoded": "https://www.example.com/?test=visual",
+  "expected": "https://www.example.com/?test=visual",
+  "matches": true
+}

@@ -1,0 +1,70 @@
+{
+  "mode": "compare",
+  "time": "2026-11-12T23:31:04+08:00",
+  "results": [
+    {
+      "url": "http://192.168.0.240:8000/",
+      "file": "images/compare_8000_20261112_2330/qr_L.png",
+      "version": 2,
+      "modules": 25,
+      "level": "L",
+      "pixels": [
+        330,
+        330
+      ],
+      "bytes": 1498,
+      "label": "",
+      "logo": null,
+      "decoded": "http://192.168.0.240:8000/",
+      "matches": true
+    },
+    {
+      "url": "http://192.168.0.240:8000/",
+      "file": "images/compare_8000_20261112_2330/qr_M.png",
+      "version": 2,
+      "modules": 25,
+      "level": "M",
+      "pixels": [
+        330,
+        330
+      ],
+      "bytes": 1482,
+      "label": "",
+      "logo": null,
+      "decoded": "http://192.168.0.240:8000/",
+      "matches": true
+    },
+    {
+      "url": "http://192.168.0.240:8000/",
+      "file": "images/compare_8000_20261112_2330/qr_Q.png",
+      "version": 3,
+      "modules": 29,
+      "level": "Q",
+      "pixels": [
+        370,
+        370
+      ],
+      "bytes": 1844,
+      "label": "",
+      "logo": null,
+      "decoded": "http://192.168.0.240:8000/",
+      "matches": true
+    },
+    {
+      "url": "http://192.168.0.240:8000/",
+      "file": "images/compare_8000_20261112_2330/qr_H.png",
+      "version": 3,
+      "modules": 29,
+      "level": "H",
+      "pixels": [
+        370,
+        370
+      ],
+      "bytes": 1870,
+      "label": "",
+      "logo": null,
+      "decoded": "http://192.168.0.240:8000/",
+      "matches": true
+    }
+  ]
+}

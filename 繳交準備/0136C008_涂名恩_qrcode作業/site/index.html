@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>QR Code 掃描實驗</title>
+<style>
+:root{font-family:system-ui,-apple-system,sans-serif;color:#173c3a;background:#f1f6f1}body{margin:0}main{max-width:42rem;margin:4rem auto;padding:0 1.25rem}.card{background:white;border:1px solid #d5e6da;border-radius:1rem;padding:clamp(1.4rem,5vw,2.5rem);box-shadow:0 12px 40px #20483510} .tag{font-size:.85rem;letter-spacing:.1em;color:#317767;font-weight:700}h1{font-size:clamp(2rem,7vw,3rem);line-height:1.2;margin:.6rem 0 1rem}p{line-height:1.7}button{background:#176b57;color:white;border:0;border-radius:.6rem;padding:.8rem 1.1rem;font-size:1rem;cursor:pointer}button:focus-visible{outline:3px solid #efaa3b;outline-offset:3px}#response{min-height:1.7em;font-weight:600}form{margin-top:2rem;border-top:1px solid #d5e6da;padding-top:1rem}form h2{font-size:1.25rem}label{display:block;font-weight:600;margin-bottom:.5rem}input,select,textarea{box-sizing:border-box;width:100%;border:1px solid #a9c7b6;border-radius:.6rem;padding:.8rem;font:inherit;color:inherit;margin-bottom:1rem}input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #efaa3b;outline-offset:2px}form p{font-size:.9rem;color:#42635d}#checkin-result,#survey-result{font-weight:600;min-height:1.5em}.identity{border-top:1px solid #d5e6da;margin-top:2rem;padding-top:1rem;color:#42635d}
+</style></head>
+<body><main><div class="card"><span class="tag">資料結構 · 期中實作</span><h1>掃描成功，<br>歡迎來到我的網頁。</h1><p>這個頁面由電腦上的 Python 本機伺服器提供。透過 QR Code，手機不必手動輸入網址就能連線。</p><button id="hello" type="button">點擊互動</button><p id="response" role="status" aria-live="polite"></p><form id="checkin-form"><h2>設備點名</h2><p>請自行填寫設備型號，送出後會記錄型號與此連線的來源 IP，供管理者查看。</p><label for="model">設備型號</label><input id="model" name="model" type="text" maxlength="80" placeholder="例如：iPhone 13 Pro" required><button type="submit">送出點名</button><p id="checkin-result" role="status" aria-live="polite"></p></form><form id="survey-form"><h2>使用體驗問卷</h2><p>請分享使用本網站的感受，送出後問卷內容與時間會記錄在管理後台。</p><label for="rating">整體使用體驗</label><select id="rating" name="rating" required><option value="">請選擇滿意度</option><option value="非常滿意">非常滿意</option><option value="滿意">滿意</option><option value="普通">普通</option><option value="不滿意">不滿意</option></select><label for="comment">建議或想法（選填）</label><textarea id="comment" name="comment" rows="4" maxlength="500" placeholder="歡迎留下你的建議"></textarea><button type="submit">送出問卷</button><p id="survey-result" role="status" aria-live="polite"></p></form><p class="identity">學號：0136C008<br>姓名：涂名恩</p></div></main>
+<script>document.querySelector('#hello').addEventListener('click',()=>{document.querySelector('#response').textContent='互動成功！謝謝你參與掃描測試。';});
+const checkinForm=document.querySelector('#checkin-form'), modelInput=document.querySelector('#model'), checkinResult=document.querySelector('#checkin-result');
+checkinForm.addEventListener('submit',async event=>{
+ event.preventDefault();const model=modelInput.value.trim();
+ if(!model){checkinResult.textContent='請輸入設備型號。';modelInput.focus();return;}
+ const button=checkinForm.querySelector('button');button.disabled=true;checkinResult.textContent='送出中…';
+ try{const response=await fetch('/api/checkin',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model})});
+  if(!response.ok)throw new Error('送出失敗');const record=await response.json();
+  checkinResult.textContent=`點名成功！設備型號：${record.model}；來源 IP：${record.ip}`;
+ }catch{checkinResult.textContent='無法送出點名，請確認連線後再試。';}finally{button.disabled=false;}
+});
+const surveyForm=document.querySelector('#survey-form'), surveyResult=document.querySelector('#survey-result');
+surveyForm.addEventListener('submit',async event=>{
+ event.preventDefault();const rating=document.querySelector('#rating').value, comment=document.querySelector('#comment').value;
+ if(!rating){surveyResult.textContent='請選擇滿意度。';return;}
+ const button=surveyForm.querySelector('button');button.disabled=true;surveyResult.textContent='送出中…';
+ try{const response=await fetch('/api/survey',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({rating,comment})});
+  if(!response.ok)throw new Error('送出失敗');surveyResult.textContent='問卷已送出，謝謝你的回饋！';surveyForm.reset();
+ }catch{surveyResult.textContent='無法送出問卷，請確認連線後再試。';}finally{button.disabled=false;}
+});</script>
+</body></html>

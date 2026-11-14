@@ -1,0 +1,66 @@
+{
+  "mode": "compare",
+  "time": "2026-10-30T17:59:58+08:00",
+  "results": [
+    {
+      "url": "https://www.example.com/",
+      "file": "images/compare/qr_L.png",
+      "version": 2,
+      "modules": 25,
+      "level": "L",
+      "pixels": [
+        330,
+        330
+      ],
+      "bytes": 1498,
+      "label": "",
+      "decoded": "https://www.example.com/",
+      "matches": true
+    },
+    {
+      "url": "https://www.example.com/",
+      "file": "images/compare/qr_M.png",
+      "version": 2,
+      "modules": 25,
+      "level": "M",
+      "pixels": [
+        330,
+        330
+      ],
+      "bytes": 1476,
+      "label": "",
+      "decoded": "https://www.example.com/",
+      "matches": true
+    },
+    {
+      "url": "https://www.example.com/",
+      "file": "images/compare/qr_Q.png",
+      "version": 3,
+      "modules": 29,
+      "level": "Q",
+      "pixels": [
+        370,
+        370
+      ],
+      "bytes": 1853,
+      "label": "",
+      "decoded": "https://www.example.com/",
+      "matches": true
+    },
+    {
+      "url": "https://www.example.com/",
+      "file": "images/compare/qr_H.png",
+      "version": 3,
+      "modules": 29,
+      "level": "H",
+      "pixels": [
+        370,
+        370
+      ],
+      "bytes": 1823,
+      "label": "",
+      "decoded": "https://www.example.com/",
+      "matches": true
+    }
+  ]
+}

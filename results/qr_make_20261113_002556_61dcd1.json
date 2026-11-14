@@ -1,0 +1,18 @@
+{
+  "mode": "make",
+  "time": "2026-11-13T00:25:56+08:00",
+  "url": "http://192.168.0.240:8000/",
+  "file": "images/qr_make_report_20261113.png",
+  "version": 3,
+  "modules": 29,
+  "level": "H",
+  "pixels": [
+    370,
+    417
+  ],
+  "bytes": 5004,
+  "label": "Local website",
+  "logo": "builtin",
+  "decoded": "http://192.168.0.240:8000/",
+  "matches": true
+}

@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>QR Code 掃描實驗</title>
+<style>
+:root{font-family:system-ui,-apple-system,sans-serif;color:#173c3a;background:#f1f6f1}body{margin:0}main{max-width:42rem;margin:4rem auto;padding:0 1.25rem}.card{background:white;border:1px solid #d5e6da;border-radius:1rem;padding:clamp(1.4rem,5vw,2.5rem);box-shadow:0 12px 40px #20483510} .tag{font-size:.85rem;letter-spacing:.1em;color:#317767;font-weight:700}h1{font-size:clamp(2rem,7vw,3rem);line-height:1.2;margin:.6rem 0 1rem}p{line-height:1.7}button{background:#176b57;color:white;border:0;border-radius:.6rem;padding:.8rem 1.1rem;font-size:1rem;cursor:pointer}button:focus-visible{outline:3px solid #efaa3b;outline-offset:3px}#response{min-height:1.7em;font-weight:600}.identity{border-top:1px solid #d5e6da;margin-top:2rem;padding-top:1rem;color:#42635d}
+</style></head>
+<body><main><div class="card"><span class="tag">資料結構 · 期中實作</span><h1>掃描成功，<br>歡迎來到我的網頁。</h1><p>這個頁面由電腦上的 Python 本機伺服器提供。透過 QR Code，手機不必手動輸入網址就能連線。</p><button id="hello" type="button">點擊互動</button><p id="response" role="status" aria-live="polite"></p><p class="identity">學號：0136C008<br>姓名：涂名恩</p></div></main>
+<script>document.querySelector('#hello').addEventListener('click',()=>{document.querySelector('#response').textContent='互動成功！謝謝你參與掃描測試。';});</script>
+</body></html>

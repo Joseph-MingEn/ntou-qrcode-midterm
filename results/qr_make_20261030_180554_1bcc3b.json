@@ -1,0 +1,17 @@
+{
+  "mode": "make",
+  "time": "2026-10-30T18:05:54+08:00",
+  "url": "https://www.example.com/?test=visual",
+  "file": "images/重測/label.png",
+  "version": 5,
+  "modules": 37,
+  "level": "H",
+  "pixels": [
+    450,
+    502
+  ],
+  "bytes": 5039,
+  "label": "Example test",
+  "decoded": "https://www.example.com/?test=visual",
+  "matches": true
+}

@@ -1,0 +1,12 @@
+test_all_levels_are_generated_and_decoded (test_qr_web.QRTests.test_all_levels_are_generated_and_decoded) ... ok
+test_make_decode_and_comparison (test_qr_web.QRTests.test_make_decode_and_comparison) ... ok
+test_missing_image_is_error (test_qr_web.QRTests.test_missing_image_is_error) ... [ WARN:0@0.081] global loadsave.cpp:278 findDecoder imread_('/not/a/real/qr.png'): can't open/read file: check file path/integrity
+ok
+test_url_validation (test_qr_web.QRTests.test_url_validation) ... ok
+test_request_log_includes_all_requests_and_agent (test_qr_web.ServerTests.test_request_log_includes_all_requests_and_agent) ... 127.0.0.1 - - [30/Oct/2026 18:02:17] code 404, message File not found
+ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.575s
+
+OK
